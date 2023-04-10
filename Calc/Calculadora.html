@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="stilo.css" rel="stylesheet">
+        <title>Calculadora</title>
+    </head>
+    <body>
+
+        <div class="calculadora"><!--Container da Calculadora-->                                                                                                                               
+            <div class="tela"><!--Fileira da tela-->                                                                                                                                  
+                <p id="tela">Tela da Calculadora</p>
+            </div>
+
+            <div class="memoria"><!--fileira de dysplay da memoria da calculadora-->                                                                                                                               
+                <p id="memoria"></p>
+            </div>
+
+            <div class="btn"><!--Grupo de botões-->                                                                                                                                   
+                <div class="btn-group">
+                    <span onclick="realizaOperacao('clear')" id="clear"><div class="botao"> C </div></span>
+                    <span onclick="realizaOperacao('delete')" id="delete"><div class="botao"> D </div></span>
+                    <span onclick="realizaOperacao('resto')" id="resto"><div class="botao"> % </div></span>
+                    <span onclick="realizaOperacao('divisao')"><div class="botao" id="divide"> / </div></span>
+                    <span onclick="digitaNumero('7')" id="n1"><div class="botao"> 7 </div></span>
+                    <span onclick="digitaNumero('8')" id="n2"><div class="botao"> 8 </div></span>
+                    <span onclick="digitaNumero('9')" id="n3"><div class="botao"> 9 </div></span>
+                    <span onclick="realizaOperacao('multiplica')" id="mult"><div class="botao"> * </div></span>
+                    <span onclick="digitaNumero('4')" id="n4"><div class="botao"> 4 </div></span>
+                    <span onclick="digitaNumero('5')" id="n5"><div class="botao"> 5 </div></span>
+                    <span onclick="digitaNumero('6')" id="n6"><div class="botao"> 6 </div></span>
+                    <span onclick="realizaOperacao('subtrai')" id="menos"><div class="botao"> - </div></span>
+                    <span onclick="digitaNumero('1')" id="n7"><div class="botao"> 1 </div></span>
+                    <span onclick="digitaNumero('2')"id="n8"><div class="botao" > 2 </div></span>
+                    <span onclick="digitaNumero('3')"><div class="botao" id="n9"> 3 </div></span>
+                    <span onclick="realizaOperacao('soma')"><div class="botao" id="soma"> + </div></span>
+                    <span onclick="digitaNumero('0')"><div class="botao" id="n0"> 0 </div></span>
+                    <span onclick="virgula('.')"><div class="botao" id="virgula"> , </div></span>
+                    <span onclick="resolve(1)"><div class="botao" id="igual"> = </div></span>
+                </div>
+            </div>
+
+
+        </div>
+
+        <script src="control.js"></script>
+    </body>
+</html>
