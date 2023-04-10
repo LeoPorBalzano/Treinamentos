@@ -1,0 +1,48 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.calculadora{ 
+    border: 1px solid black;
+    border-radius: 2rem;
+    width: 500px;
+    display: grid;
+    grid-template-rows: 80px 60px 650px;
+}
+
+.tela{
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    font-size: 40px
+}
+
+.memoria{
+    margin-left: 10px;
+    font-size: 20px
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-group{
+    width: 490px;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    font-size: 30px;
+}
+
+.botao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+    padding: auto;
+    border: 1px solid gray;
+    border-radius: 15rem;
+}
