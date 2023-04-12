@@ -1,19 +1,23 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
 import './App.css';
+
+class HelloWord extends React.Component {
+  render() {
+      return <div>Hello, world!</div>
+  }
+}
 
 function App() {
   return (
     <div className="App">
-      <OlaMundo />
+      <HelloWord />
     </div>
   );
 }
 
-function OlaMundo() {
-  return (
-    <div>
-      Hello World
-    </div>
-  );
-}
+
+
+
 
 export default App;
