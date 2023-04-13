@@ -28,6 +28,28 @@
   color: #61dafb;
 }
 
+span{
+  opacity:0;
+  transition: all 0.4s ease;
+  transform: translateY(50px);
+}
+
+.fade{
+  opacity:1;
+  transform: translateY(50px);
+}
+
+.botaodolado{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.btn{
+  width: 100px;
+  height: 50px;
+}
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
