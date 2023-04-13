@@ -1,32 +1,18 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import './App.css';
-import {write} from './helloworld1.js'
-import {write2} from './helloworld2.js'
+import {HelloWord1} from './helloworld1.js'
+import {HelloWord2} from './helloworld2.js'
+import {HelloWord3} from './helloworld3.js'
 
-class HelloWord1 extends React.Component {
-  render() {
-      return write();
-  }
-}
-
-class HelloWord2 extends React.Component {
-  render() {
-      return write2();
-  }
-}
 
 function App() {
   return (
     <div className="App">
       <HelloWord1 />
       <HelloWord2 />
+      <HelloWord3 />
     </div>
   );
 }
-
-
-
-
 
 export default App;

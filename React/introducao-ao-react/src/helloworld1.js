@@ -1,25 +1,26 @@
-import React from 'react';
+import React , {Component} from 'react';
 import './App.css';
+
 
 const text="Hello World ";
 const Vtext = text.split("");
 
-export function write(){
-  const list = [];
+function write(){
+  const charList = [];
   for(var count=0;count<Vtext.length;count++){
-    list.push(<span>{Vtext[count]}</span>)
+    charList.push(<span class='hw1'>{Vtext[count]}</span>)
   }
   return(
     <div id="exibe">
       <h1>
-        {list}
+        {charList}
       </h1>
     </div>
   );
 }
 
 let char = 0;
-let timer = setInterval(onTick,300);
+setInterval(onTick,300);
 
 function onTick(){
   let span = document.getElementById('exibe').querySelectorAll('span')[char];
@@ -39,3 +40,8 @@ function complete(){
   }
 }
 
+export class HelloWord1 extends Component {
+  render() {
+      return write();
+  }
+}

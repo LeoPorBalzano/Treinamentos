@@ -1,9 +1,8 @@
-import React from 'react';
+import React , {Component} from 'react';
 import ReactDOM from 'react-dom';
 import './App.css';
 
 let text="Hello World";
-const HW = document.getElementById('text2');
 
 
 function hide() {
@@ -15,19 +14,21 @@ function hide() {
     ReactDOM.render(
       text,
       document.getElementById('text2')
-  );
-  
-    
+  );  
 };
 
 
-
-
-export function write2(){
+function write2(){
   
   return(
-    <div id="exibe" class='botaodolado'>
-      <h1 id='text2'>{text}</h1><button onClick={hide} class='btn'>Esconde</button>
+    <div class='botaodolado'>
+      <h1 id='text2'>{text}</h1><button onClick={hide} class='btn'>Translate</button>
     </div>
   );
+}
+
+export class HelloWord2 extends Component {
+  render() {
+      return write2();
+  }
 }
