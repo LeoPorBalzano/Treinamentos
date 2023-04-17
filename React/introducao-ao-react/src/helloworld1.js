@@ -40,7 +40,7 @@ function complete(){
   }
 }
 
-export class HelloWord1 extends Component {
+export class HelloWorld1 extends Component {
   render() {
       return write();
   }

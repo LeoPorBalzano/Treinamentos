@@ -27,7 +27,7 @@ function write2(){
   );
 }
 
-export class HelloWord2 extends Component {
+export class HelloWorld2 extends Component {
   render() {
       return write2();
   }

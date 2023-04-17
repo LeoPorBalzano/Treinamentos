@@ -21,7 +21,7 @@ function write3(){
 let char = 0;
 let char1 = 0;
 let aux =  0;
-setInterval(onTick,300);
+setInterval(onTick,350);
 
 function onTick(){
   let span = document.getElementById('exibe3').querySelectorAll('span')[char];
@@ -32,8 +32,9 @@ function onTick(){
   }
     if(aux<3){
         aux++
-    }if(aux===2){
-          setInterval(onTick1,300);
+        if(aux===2){
+            setInterval(onTick1,350);
+        }
     }
     
 }
@@ -47,7 +48,7 @@ function onTick1(){
     }
 }
 
-export class HelloWord3 extends Component {
+export class HelloWorld3 extends Component {
     render() {
         return write3();
     }
